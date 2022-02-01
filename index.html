@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Pieteikšanās konstulācijai</title>
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <container>
+        <div class="box">
+            <h1 class="virsraksts">Pieteikšanās konsultācijai</h1>
+            <form action="php/connect.php" enctype="multipart/form-data">
+                <form action="php/email.php">
+                    <div class="fields">
+                        <div class="text-box">
+                            <input type="text" placeholder="Uzvārds" name="uzvards" value="" required>
+                        </div>
+            
+                        <div class="text-box">
+                            <input type="text" id="input-field1" placeholder="Vārds" name="vards" value="" required>
+                        </div>
+            
+                        <div class="text-box">
+                            <input type="email" id="input-field2" placeholder="e-pasts" name="email" required>
+                        </div>
+            
+                        <div class="text-box">
+                            <label for="klase" class="klase">Klase</label>
+                            <select name="klase" class="klase" id="klase" >
+                                <option value="-"></option>
+                                <option value="7.a">7.a</option>
+                                <option value="7.b">7.b</option>
+                                <option value="7.c">7.c</option>
+                                <option value="8.a">8.a</option>
+                                <option value="8.b">8.b</option>
+                                <option value="8.c">8.c</option>
+                                <option value="9.a">9.a</option>
+                                <option value="9.b">9.b</option>
+                                <option value="9.c">9.c</option>
+                                <option value="10.a">10.a</option>
+                                <option value="10.b">10.b</option>
+                                <option value="10.c">10.c</option>
+                                <option value="11.a">11.a</option>
+                                <option value="11.b">11.b</option>
+                                <option value="11.c">11.c</option>
+                                <option value="12.a">12.a</option>
+                                <option value="12.b">12.b</option>
+                                <option value="12.c">12.c</option>
+                            </select>
+                        </div>
+            
+                        <div class="text-box">
+                            <label for="lesson" class="lesson">Mācību priekšmets</label>
+                            <select name="lesson" class="lesson" id="lesson">
+                                <option value="-"></option>
+                                <option value="Latviesu_valoda">Latviešu valoda</option>
+                                <option value="Programesana">Programēšana</option>
+                                <option value="Matematika">Matemātika</option>
+                                <option value="Anglu_valoda">Angļu valoda</option>
+                                <option value="Vacu_valoda">Vācu valoda</option>
+                                <option value="Krievu_valoda">Krievu valoda</option>
+                                <option value="Sports">Sports un veselība</option>
+                                <option value="VSZ">VSZ</option>
+                                <option value="Kimija">Ķīmija</option>
+                                <option value="Fizika">Fizika</option>
+                                <option value="Dabas_zinibas">Dabas zinības</option>
+                                <option value="Literatura">Literatura</option>
+                                <option value="Francu_valoda">Franču valoda</option>
+                                <option value="Geografija">Ģeogrāfija</option>
+                                <option value="Vizuala_maksla">Vizuālā māksla</option>
+                                <option value="Muzika">Mūzika</option>
+                                <option value="Inzinier_zinatnes">Inžinier zinātne</option>
+                                <option value="Latvijas_vesture">Latvijas vēsture</option>
+                                <option value="Pasaules_vesture">Pasaules vēsture</option>
+                                <option value="Majturiba">Mājturība</option>
+                                <option value="Socialas_zinibas">Sociālās zinātnes</option>
+                                <option value="Dizains_tehnologija">Dizains un tehnoloģijas</option>
+                                <option value="Datorika">Datorika</option>
+                                <option value="Latvijas_pasaules">Latvijas un pasaules vēsture</option>
+                                <option value="Kulturas_pamati">Kultūras pamati</option>
+                                <option value='DZVP'>DZVP</option>
+                                <option value="MZVP">MZVP</option>
+                                <option value="Ekonomika">Ekonomika</option>
+                                <option value="Politika_tiesibas">Politika un tiesības</option>
+                                <option value="Biologija">Bioloģija</option>
+                            </select>
+            
+                        </div>
+            
+                        <div class="text-box">
+                            <label for="teacher" class="teacher">Skolotājs</label>
+                            <select name="teacher" class="teacher" id="teacher"></select>
+                        </div>
+            
+                        <div class="text-box">
+                            <label for="Datums">Datums:</label>
+                            <input type="date" name="Datums" id="Datums" required>
+                        </div>
+            
+                        <div class="text-box">
+                            <a href="https://daugrc.edu.lv/wp-content/uploads/2018/10/Konsultacijas-2021_2022m_g_labots_05_01_2022.docx" class="kons">Konsultāciju grafiks</a>
+                        </div>
+                        
+                        <input class="btn" type="submit" id="btn" name="btn" value="Pieteikties"> 
+                    </div>
+                </form>
+            </form>
+        </div>
+    </container>
+    <script src="js/script.js"></script>
+</body>
+</html>
